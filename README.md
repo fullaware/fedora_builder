@@ -4,11 +4,11 @@ fedora_builder
 fedora 20, 21 apps and tweaks for HP 9470m
 
 
-Add:
+Add:  
 `acpi_osi=Linux acpi_backlight=vendor`  
-to:
+to:  
 `/etc/default/grub (the line GRUBCMDLINELINUX=" ..... "`  
-then:
+then:  
 `grub2-mkconfig -o /boot/grub2/grub.cfg`  
 
 ```
