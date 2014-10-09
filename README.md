@@ -5,11 +5,11 @@ fedora 20, 21 apps and tweaks for HP 9470m
 
 
 Add:
-`acpi_osi=Linux acpi_backlight=vendor`
+`acpi_osi=Linux acpi_backlight=vendor`  
 to:
-`/etc/default/grub (the line GRUBCMDLINELINUX=" ..... "`
+`/etc/default/grub (the line GRUBCMDLINELINUX=" ..... "`  
 then:
-`grub2-mkconfig -o /boot/grub2/grub.cfg`
+`grub2-mkconfig -o /boot/grub2/grub.cfg`  
 
 ```
 su -c 'yum localinstall --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
