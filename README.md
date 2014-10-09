@@ -11,6 +11,10 @@ to:
 then:  
 `grub2-mkconfig -o /boot/grub2/grub.cfg`  
 
+or EFI:  
+`grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg`  
+
+
 ```
 su -c 'yum localinstall --nogpgcheck http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm'
 
